@@ -1,0 +1,9 @@
+<div class="flex items-center justify-between w-full text-gray-500 text-xs font-bold">
+  <p class="cursor-pointer">{{ tasks.length - completedTasksCount }} items left</p>
+  <div class="flex justify-between w-48">
+    <button class="cursor-pointer focus:text-blue-600 hover:text-white">All</button>
+    <button class="cursor-pointer focus:text-blue-600 hover:text-white">Active</button>
+    <button class="cursor-pointer focus:text-blue-600 hover:text-white">Completed</button>
+  </div>
+  <button class="cursor-pointer hover:text-white " (click)="onClearCompleted()">Clear Completed</button>
+</div>
